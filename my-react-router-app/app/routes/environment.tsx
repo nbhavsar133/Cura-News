@@ -17,7 +17,7 @@ export default function Environment() {
 
     useEffect(()=>{
 
-        axios.get(`http://localhost:3000/environment`)
+        axios.get(`https://cura-news.onrender.com/environment`)
         .then((res)=>{
 
             setArticles(res.data.results)

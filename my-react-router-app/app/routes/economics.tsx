@@ -15,7 +15,7 @@ export default function Economics() {
     const [articles, setArticles]=useState([])
     useEffect(()=>{
 
-        axios.get(`http://localhost:3000/economics`)
+        axios.get(`https://cura-news.onrender.com/economics`)
         .then((res)=>{
 
             setArticles(res.data.articles)
