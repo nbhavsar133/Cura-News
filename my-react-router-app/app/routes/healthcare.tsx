@@ -15,7 +15,7 @@ export default function Healthcare() {
     const [articles, setArticles]=useState([])
     useEffect(()=>{
 
-        axios.get(`http://localhost:3000/healthcare`)
+        axios.get(`https://cura-news.onrender.com/healthcare`)
         .then((res)=>{
 
             setArticles(res.data.articles)

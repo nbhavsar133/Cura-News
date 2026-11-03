@@ -16,7 +16,7 @@ export default function Technology() {
     const [articles, setArticles]= useState([]);
     useEffect(()=>{
 
-        axios.get(`http://localhost:3000/technology`)
+        axios.get(`https://cura-news.onrender.com/technology`)
         .then((res)=>{
 
             setArticles(res.data.articles)

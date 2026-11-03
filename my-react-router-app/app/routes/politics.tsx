@@ -19,7 +19,7 @@ export default function Politics() {
     useEffect(()=>{
 
         
-        axios.get(`http://localhost:3000/politics`)
+        axios.get(`https://cura-news.onrender.com/politics`)
         .then((res)=>{
             // console.log(res.data.articles)
             setArticles(res.data.results)
@@ -39,7 +39,6 @@ export default function Politics() {
         <main className="flex items-center justify-center pt-28 pb-16 flex-col text-sky-600">
             <h1 className="self-start pl-16" style={{fontSize: "48px", fontWeight: "bold"}}>
                     Politics</h1>
-           
             <div className="flex items-center flex pt-16 text-indigo-500 flex-col" style={{fontSize: "32px"}}>
                 
                 <Link to="/welcome">

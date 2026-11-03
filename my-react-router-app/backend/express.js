@@ -64,7 +64,7 @@ app.get('/economics', async (req,res)=>{
     else{res.status(404).json({message:"something went wrong"})}
 })
 app.listen(port, ()=> {
-    console.log(`Example app listening on port localhost http://localhost:3000 ${port}`)
+    console.log(`Example app listening on port ${port}`)
 })
 
 
